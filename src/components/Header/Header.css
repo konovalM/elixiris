@@ -1,0 +1,42 @@
+.headerContent{
+    margin-left: 140px;
+    margin-top: 248px;
+}
+h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    color: #333333;
+    max-width: 780px;
+    margin-bottom: 51px;
+}
+
+h1 span{
+    color: #688C63;;
+}
+
+.headerDescr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #333333;
+    max-width: 475px;
+    margin-bottom: 61px;
+}
+
+.header button{
+    width: 257px;
+    height: 57px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    background: #69A561;
+    color: #fff;
+}

@@ -1,0 +1,17 @@
+.first{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.second{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #333333;
+}
