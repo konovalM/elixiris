@@ -4,6 +4,7 @@ import Course from "./Course/Course";
 import Reviews from "./Reviews/Reviews";
 import Terms from "./Terms/Terms";
 import Error from "./Error/Error";
+import ContactUs from "./ContactUs/ContactUs";
 
 const App = () => {
     const about = {
@@ -24,8 +25,9 @@ const App = () => {
             <About title={about.title} text={about.text}/>
             <Course title={course.title} text={course.text}/>
             <Reviews title={reviews.title} text={reviews.text}/>
-            <Terms/>*/}
-            <Error/>
+            <Terms/>
+            <Error/>*/}
+            <ContactUs/>
         </div>
     )
 }
