@@ -1,0 +1,31 @@
+.terms{
+    padding: 20px 0 150px;
+    background-color: #F7F7F7;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 145px 0 50px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    text-align: center;
+    color: #4C604A;
+}
+.text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #555555;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+.text+.text{
+    margin-top: 20px;
+}
