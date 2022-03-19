@@ -1,0 +1,52 @@
+.moment{
+    min-height: 100vh;
+    background: #F6F6F6 url("../../../images/sheet2.png")left bottom/55% no-repeat ;
+    padding: 239px 0 0;
+    position: relative;
+}
+
+.momentContainer{
+    padding: 0 371px;
+    display: flex;
+    justify-content: right;
+}
+.momentImg{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.momentContent{
+    max-width: 460px;
+}
+
+.momentTitle{
+    font-size: 60px;
+    line-height: 140%;
+    color: #4C604A;
+    margin-bottom: 40px;
+}
+.momentDescr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #555555;
+    margin-bottom: 60px;
+}
+
+.momentLink{
+    padding: 18px 43px;
+    border: 1px solid #4C604A;
+    color: #4C604A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.3em;
+}
+.momentImg{
+    object-fit: contain;
+}

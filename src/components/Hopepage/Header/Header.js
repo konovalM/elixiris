@@ -1,5 +1,5 @@
 import './Header.css';
-import HeaderList from "../HeaderList/HeaderList";
+import HeaderList from "../../HeaderList/HeaderList";
 
 const Header = () => {
     return (

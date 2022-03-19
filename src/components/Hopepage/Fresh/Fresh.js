@@ -1,6 +1,6 @@
 import './Fresh.css'
-import girl from '../../images/girlInWater.jpg'
-import sheet from '../../images/sheet.jpg'
+import girl from '../../../images/girlInWater.jpg'
+import sheet from '../../../images/sheet.jpg'
 
 const Fresh = () => {
     return (
