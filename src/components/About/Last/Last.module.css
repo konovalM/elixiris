@@ -1,0 +1,18 @@
+.last{
+    min-height: 550px;
+    background: url("../../../images/last.jpg")center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 782px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 140.9%;
+    text-align: center;
+    color: #FFFFFF;
+}

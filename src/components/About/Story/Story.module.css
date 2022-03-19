@@ -1,0 +1,38 @@
+.story{
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    padding: 125px 0 80px;
+}
+
+.container{
+    padding: 0 112px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.title{
+    font-size: 60px;
+    line-height: 140%;
+    color: #4C604A;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.content{
+    max-width: 577px;
+    margin-left: 128px;
+}
+.description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #555555;
+}
+
+.description+.description{
+    margin-top: 25px;
+}

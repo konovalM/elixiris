@@ -28,9 +28,8 @@ h1 span{
     margin-bottom: 61px;
 }
 
-.header button{
-    width: 257px;
-    height: 57px;
+.headerContent a{
+    padding: 18px 24px;
     border: none;
     font-family: 'Open Sans';
     font-style: normal;
@@ -39,4 +38,5 @@ h1 span{
     line-height: 23px;
     background: #69A561;
     color: #fff;
+    letter-spacing: 0.3em;
 }
