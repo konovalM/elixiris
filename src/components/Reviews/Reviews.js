@@ -1,12 +1,12 @@
 import HeaderDefault from "../HeaderDefault/HeaderDefault";
 import Review from "./Review/Review";
 import Footer from "../Homepage/Footer/Footer";
+import ReviewsHeader from "./ReviewsHeader/ReviewsHeader";
 
 const Reviews = (props) => {
-    const {title, text} = props
     return (
         <div>
-            <HeaderDefault title={title} text={text}/>
+            <ReviewsHeader {...props}/>
             <Review/>
             <Footer/>
         </div>

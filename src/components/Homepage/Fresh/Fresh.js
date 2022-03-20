@@ -1,6 +1,7 @@
 import './Fresh.css'
 import girl from '../../../images/girlInWater.jpg'
 import sheet from '../../../images/sheet.jpg'
+import {Link} from "react-router-dom";
 
 const Fresh = () => {
     return (
@@ -15,7 +16,7 @@ const Fresh = () => {
                     <p className="freshDescr">The Elixiris process uses the pure remedies of nature to reduce and resolve asthma symptoms. </p>
                     <p className="freshDescr">Every aspect of our process is backed by science and does not involve any medication, supplements, or invasive treatments.</p>
                     <div className="linkWrapper">
-                        <a href="/" className="freshLink">ABOUT US</a>
+                        <Link to="/about" className="freshLink">ABOUT US</Link>
                     </div>
                 </div>
                 <img src={sheet} alt="sheet" className="freshSheet"/>

@@ -1,10 +1,10 @@
 import HeaderDefault from "../HeaderDefault/HeaderDefault";
+import CourseHeader from "./CourseHeader/CourseHeader";
 
 const Course = (props) => {
-    const {title, text} = props
     return (
         <div>
-            <HeaderDefault title={title} text={text}/>
+            <CourseHeader {...props}/>
         </div>
     )
 }

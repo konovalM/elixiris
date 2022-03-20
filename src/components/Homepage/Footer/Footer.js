@@ -1,44 +1,45 @@
 import './Footer.css'
-import logoWhite from '../../../images/logoWhite.svg'
+import logoError from '../../../images/logoError.svg'
 import paypal from '../../../images/paypal.svg'
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer>
             <div className="container">
                 <div className="footerWrapper">
-                    <a href="/">
-                        <img src={logoWhite} alt="logo" className='footerLogo'/>
-                    </a>
+                    <Link to="/">
+                        <img src={logoError} alt="logo" className='footerLogo'/>
+                    </Link>
                     <div className="footerLinks">
-                        <a href="/" className="footerLink">ABOUT</a>
-                        <a href="/" className="footerLink">THE COURSE</a>
-                        <a href="/" className="footerLink">REVIEWS</a>
+                        <Link to="/about" className="footerLink">ABOUT</Link>
+                        <Link to="course" className="footerLink">THE COURSE</Link>
+                        <Link to="/reviews" className="footerLink">REVIEWS</Link>
                     </div>
-                    <a href="/">
+                    <Link to="/book">
                         <img src={paypal} alt="paypal"/>
-                    </a>
+                    </Link>
                 </div>
-                <a href="/" className='footerBook'>BOOK THE COURSE</a>
+                <Link to="/book" className='footerBook'>BOOK THE COURSE</Link>
                 <div className="footerLast">
                     <div className="footerTerms">
                         ©2021 Elexiris
                     </div>
-                    <a href="/" className="footerTerms">
+                    <Link to="/terms" className="footerTerms">
                         Terms of Use
-                    </a>
-                    <a href="/" className="footerTerms">
+                    </Link>
+                    <Link to="/error" className="footerTerms">
                         Privacy Policy
-                    </a>
-                    <a href="/" className="footerTerms">
+                    </Link>
+                    <Link to="/error" className="footerTerms">
                         Accessibility
-                    </a>
-                    <a href="/" className="footerTerms">
+                    </Link>
+                    <Link to="/error" className="footerTerms">
                         Site Map
-                    </a>
-                    <a href="/" className="footerTerms">
+                    </Link>
+                    <Link to="/contact" className="footerTerms">
                         Contact
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>

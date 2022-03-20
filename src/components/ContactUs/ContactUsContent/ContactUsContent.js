@@ -21,13 +21,13 @@ const ContactUsContent = () => {
                     <button type='submit' className={s.send}>SEND MESSAGE</button>
                 </form>
                 <div className={s.info}>
-                    <div className={s.left}>
+                    <div>
                         <div className={s.name}>Address</div>
                         <div className={s.address}>2972 Westheimer<br/> Rd. Santa Ana, Illinois<br/> 85486</div>
                     </div>
-                    <div className={s.right}>
+                    <div>
                         <div className={s.name}>Phone & E-mail</div>
-                        <div className={s.tel}>905) 515-2333 <br/>info@elixiris.com</div>
+                        <div className={s.tel}>(905) 515-2333 <br/>info@elixiris.com</div>
                     </div>
                 </div>
             </div>

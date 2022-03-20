@@ -1,5 +1,7 @@
 import './Moment.css'
 import sheet2 from '../../../images/sheet2.png'
+import {Link} from "react-router-dom";
+
 const Moment = () => {
     return (
         <section className="moment">
@@ -10,7 +12,7 @@ const Moment = () => {
                     <p className="momentDescr">
                         Don’t just take our word for it. Curious what the Elixiris experience is like? Hear it directly from our past participants.
                     </p>
-                    <a href="/" className='momentLink'>READ OUR REVIEWS</a>
+                    <Link to="/reviews" className='momentLink'>READ OUR REVIEWS</Link>
                 </div>
             </div>
         </section>
