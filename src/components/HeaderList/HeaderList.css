@@ -3,10 +3,7 @@
     background: url("./../../images/headerBg.jpg")right bottom/cover no-repeat;
     min-height: 100vh;
 }
-.header img{
-    width: 90px;
-    height: 75px;
-}
+
 
 .container{
     max-width: 1800px;
@@ -55,4 +52,8 @@
     border: 1px solid #fff;
     padding: 13px 25px;
     color: #fff;
+}
+
+.active{
+    font-weight: 700;
 }

@@ -6,6 +6,7 @@ import Terms from "./Terms/Terms";
 import Error from "./Error/Error";
 import ContactUs from "./ContactUs/ContactUs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Book from "./Book/Book";
 
 const App = () => {
     const about = {
@@ -29,6 +30,7 @@ const App = () => {
                     <Route path='/reviews' element={<Reviews title={reviews.title} text={reviews.text}/>}/>
                     <Route path='/terms' element={<Terms/>}/>
                     <Route path='/contact' element={<ContactUs/>}/>
+                    <Route path='/book' element={<Book/>}/>
                     <Route path='*' element={<Error/>}/>
                 </Routes>
             </BrowserRouter>
