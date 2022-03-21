@@ -1,0 +1,30 @@
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 527px;
+    margin-bottom: 80px;
+}
+.slideText{
+    background-color: #fff;
+    height: 217px;
+    padding: 40px 25px 0;
+    text-align: center;
+}
+.title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 45px;
+    color: #688C63;
+    margin-bottom: 14px;
+}
+.descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #555555;
+}
