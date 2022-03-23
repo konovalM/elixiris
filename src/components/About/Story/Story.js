@@ -15,7 +15,7 @@ const Story = () => {
                             In 2019, Enna made a discovery and unlocked a new perspective and fresh approach to asthma, which led to the development of the Elixiris process.
                         </p>
                     </div>
-                    <div>
+                    <div className={s.minusMargin}>
                         <img src={img} alt="image"/>
                     </div>
                 </div>

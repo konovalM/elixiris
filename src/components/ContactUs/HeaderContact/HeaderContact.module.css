@@ -1,0 +1,10 @@
+.container{
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(76,96,74,0.1);
+    background: linear-gradient(0deg, #E5ECE4, #E5ECE4), #E5ECE4;
+}

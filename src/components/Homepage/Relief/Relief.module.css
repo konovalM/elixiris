@@ -1,6 +1,6 @@
 .relief{
-    padding: 125px;
-    min-height: 100vh;
+    padding: 125px 0 100px;
+    min-height: 1050px;
     background: #F7F7F7;
     position: relative;
 }

@@ -1,6 +1,5 @@
 .headerContent{
-    margin-left: 140px;
-    margin-top: 248px;
+    margin-top: 261px;
 }
 h1{
     font-family: 'Open Sans';
@@ -29,7 +28,11 @@ h1 span{
 }
 
 .headerContent a{
-    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 55px;
     border: none;
     font-family: 'Open Sans';
     font-style: normal;
@@ -39,4 +42,20 @@ h1 span{
     background: #69A561;
     color: #fff;
     letter-spacing: 0.3em;
+    transition: background-color .2s;
+    outline: none;
 }
+.headerContent a:hover{
+    background-color: #4C604A;
+}
+.headerContent a:focus{
+    outline: 1px solid #4C604A;
+    outline-offset: 3px;
+}
+.headerContent a:active{
+    transform: scaleX(.98) scaleY(.9);
+    outline: none;
+}
+
+
+

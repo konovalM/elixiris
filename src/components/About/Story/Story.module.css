@@ -1,17 +1,17 @@
 .story{
-    min-height: 100vh;
+    min-height: 1113px;
     background-color: #F6F6F6;
     padding: 125px 0 80px;
 }
 
 .container{
-    padding: 0 112px;
+    max-width: 1420px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
 .wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 .title{
     font-size: 60px;
@@ -21,8 +21,11 @@
     margin-bottom: 40px;
 }
 .content{
-    max-width: 577px;
-    margin-left: 128px;
+    width: 577px;
+    margin-right: 163px;
+}
+.minusMargin{
+    margin-right: -168px;
 }
 .description{
     font-family: 'Montserrat';

@@ -6,7 +6,7 @@
 
 
 .container{
-    max-width: 1800px;
+    max-width: 1420px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -33,7 +33,7 @@
 }
 
 .headerListItem+.headerListItem{
-    margin-left: 79px;
+    margin-left: 80px;
 }
 .headerListItem:last-child{
     margin-left: 135px;

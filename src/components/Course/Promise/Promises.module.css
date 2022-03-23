@@ -1,0 +1,102 @@
+.promise{
+    padding: 150px 0;
+    background: url("../../../images/promise.jpg")center center/cover no-repeat;
+
+}
+.container{
+    max-width: 1242px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 527px 503px;
+    grid-column-gap: 211px;
+    grid-row-gap: 47px;
+}
+.element{
+    position: relative;
+}
+.title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #4C604A;
+    margin-bottom: 50px;
+}
+.inner{
+    padding-left: 91px;
+}
+.main{
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    color: #688C63;
+}
+.element:nth-child(1)::before{
+    content: '01';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.element:nth-child(2)::before{
+    content: '02';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.element:nth-child(3)::before{
+    content: '03';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.element:nth-child(4)::before{
+    content: '04';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.element:nth-child(5)::before{
+    content: '05';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.element:nth-child(5){
+    margin-top: -62px;
+}
+.element:nth-child(6)::before{
+    content: '06';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.element::before{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #688C63;
+    opacity: 0.3;
+}
+.descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+    color: #555555;
+}
+.w315{
+    max-width: 315px;
+}
+

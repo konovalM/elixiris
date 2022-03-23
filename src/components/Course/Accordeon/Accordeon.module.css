@@ -1,15 +1,15 @@
 .wrapper{
-    max-width: 1440px;
+    max-width: 1420px;
     margin: 0 auto;
-    padding: 140px 0;
+    padding: 140px 10px;
 }
 
 .item{
     padding: 30px 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid rgba(85,85,85,0.3);
 }
 .item:first-child{
-    border-top: 1px solid #555555;
+    border-top: 1px solid rgba(85,85,85,0.3);
 }
 .title{
     display: flex;

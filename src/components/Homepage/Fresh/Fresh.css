@@ -1,27 +1,30 @@
 .fresh{
-    min-height: 100vh;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    min-height: 1125px;
+    padding: 230px 0;
+    position: relative;
 }
-.freshLeft{
-    display: flex;
-    align-items: flex-start;
-}
+
 .freshRight{
     display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 925px;
+}
+.girl{
+    align-self: center;
 }
 .freshWrapper{
     background-color: #4C604A;
     padding: 255px 155px 0;
-    max-width: 706px;
+    max-width: 710px;
 }
 .freshTitle{
     font-size: 60px;
     line-height: 140%;
     color: #4C604A;
     max-width: 340px;
-    margin-right: 19px;
 }
 
 .freshWrapper p{
@@ -42,6 +45,11 @@
 
 }
 .freshLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 55px;
     margin-top: 100px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -50,6 +58,17 @@
     line-height: 23px;
     letter-spacing: 0.3em;
     color: #FFFFFF;
-    padding: 13px 67px;
     border: 1px solid #fff;
+}
+.freshLink:hover{
+    background: #FFFFFF;
+    color: #000;
+}
+.freshLink:active{
+    width: 325px;
+    height: 50px;
+}
+.freshLink:focus{
+    outline: 1px solid #4C604A;
+    outline-offset: 3px;
 }

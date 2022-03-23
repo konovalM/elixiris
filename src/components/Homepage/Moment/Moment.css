@@ -1,23 +1,23 @@
 .moment{
-    min-height: 100vh;
-    background: #F6F6F6 url("../../../images/sheet2.png")left bottom/55% no-repeat ;
+    min-height: 837px;
+    background: #F6F6F6 url("../../../images/sheet2.png")left bottom/50% no-repeat ;
     padding: 239px 0 0;
     position: relative;
 }
 
-.momentContainer{
-    padding: 0 371px;
-    display: flex;
-    justify-content: right;
-}
+
 .momentImg{
     position: absolute;
     left: 0px;
     bottom: 0px;
 }
-
+.momentWrapper{
+    display: flex;
+    justify-content: right;
+}
 .momentContent{
     max-width: 460px;
+    margin-right: 240px;
 }
 
 .momentTitle{

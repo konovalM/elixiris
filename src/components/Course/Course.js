@@ -3,6 +3,8 @@ import CourseHeader from "./CourseHeader/CourseHeader";
 import Footer from "../Homepage/Footer/Footer";
 import Accordeon from "./Accordeon/Accordeon";
 import Value from "./Value/Value";
+import Zoom from "./Zoom/Zoom";
+import Promises from "./Promise/Promises";
 
 const Course = (props) => {
     return (
@@ -10,6 +12,8 @@ const Course = (props) => {
             <CourseHeader {...props}/>
             <Accordeon/>
             <Value/>
+            <Zoom/>
+            <Promises/>
             <Footer/>
         </div>
     )

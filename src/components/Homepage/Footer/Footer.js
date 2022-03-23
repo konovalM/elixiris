@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
-            <div className="container">
+            <div className="containerFooter">
                 <div className="footerWrapper">
                     <Link to="/">
                         <img src={logoError} alt="logo" className='footerLogo'/>

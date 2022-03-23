@@ -63,3 +63,7 @@ footer{
 .footerTerms+.footerTerms{
     border-left: 1px solid rgba(256, 256, 256, .6);
 }
+.containerFooter{
+    max-width: 1800px;
+    margin: 0 auto;
+}
