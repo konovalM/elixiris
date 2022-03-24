@@ -59,16 +59,17 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
     border: 1px solid #fff;
+    transition: background-color .2s;
 }
 .freshLink:hover{
     background: #FFFFFF;
     color: #000;
 }
-.freshLink:active{
-    width: 325px;
-    height: 50px;
-}
 .freshLink:focus{
     outline: 1px solid #4C604A;
     outline-offset: 3px;
+}
+.freshLink:active{
+    transform: scaleX(.98) scaleY(.9);
+    outline: none;
 }

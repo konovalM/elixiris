@@ -20,7 +20,9 @@ const Footer = () => {
                         <img src={paypal} alt="paypal"/>
                     </Link>
                 </div>
-                <Link to="/book" className='footerBook'>BOOK THE COURSE</Link>
+                <div className="footerBookWrapper">
+                    <Link to="/book" className='footerBook'>BOOK THE COURSE</Link>
+                </div>
                 <div className="footerLast">
                     <div className="footerTerms">
                         ©2021 Elexiris

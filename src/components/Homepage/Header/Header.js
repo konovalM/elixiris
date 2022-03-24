@@ -1,6 +1,7 @@
 import './Header.css';
 import HeaderList from "../../HeaderList/HeaderList";
 import {Link} from "react-router-dom";
+import image from '../../../images/headerBg.png'
 
 const Header = () => {
     return (
@@ -14,6 +15,7 @@ const Header = () => {
                     <Link to="/course">DISCOVER MORE</Link>
                 </div>
             </div>
+            <img src={image} alt="image" className='headerAbsolute'/>
         </header>
     )
 }

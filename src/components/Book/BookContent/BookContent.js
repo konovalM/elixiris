@@ -1,6 +1,7 @@
 import s from './BookContent.module.css'
 import paypal from '../../../images/paypalGreen.svg'
 import img from '../../../images/bookImg.png'
+import Calendar from "./Calendar/Calendar";
 
 const BookContent = () => {
     return (
@@ -9,7 +10,7 @@ const BookContent = () => {
                 <h2 className={s.title}>Book the Course</h2>
                 <div className={s.wrapper}>
                     <div className={s.calendar}>
-                        <div className={s.wrap}></div>
+                        <Calendar/>
                     </div>
                     <div className={s.payment}>
                         <div className={s.paypal}>

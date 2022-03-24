@@ -37,7 +37,11 @@
 }
 
 .momentLink{
-    padding: 18px 43px;
+    width: 330px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #4C604A;
     color: #4C604A;
     font-family: 'Open Sans';
@@ -46,6 +50,19 @@
     font-size: 17px;
     line-height: 23px;
     letter-spacing: 0.3em;
+    transition: background-color .2s;
+}
+.momentLink:hover{
+    background-color: #4C604A;
+    color: #fff;
+}
+.momentLink:focus{
+    outline-offset: 3px;
+    outline: 1px solid #4C604A;
+}
+.momentLink:active{
+    transform: scaleX(.98) scaleY(.9);
+    outline: none;
 }
 .momentImg{
     object-fit: contain;

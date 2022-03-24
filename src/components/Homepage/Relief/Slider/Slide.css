@@ -2,10 +2,12 @@
     background: transparent url("../../../../images/prev.svg")center center/contain no-repeat;
     height: 50px;
     width: 50px;
+    border-radius: 100%;
     bottom: 6px;
     top: auto;
     left:auto;
     right: 320px;
+    transition: background .2s;
 }
 .swiper{
     position: relative;
@@ -17,8 +19,16 @@
     background: transparent url("../../../../images/next.svg")center center/contain no-repeat;
     height: 50px;
     width: 50px;
+    border-radius: 100%;
     bottom: 6px;
     top: auto;
     left:auto;
     right: 240px;
+    transition: background .2s;
+}
+.swiper-button-prev:hover{
+    background: transparent url("../../../../images/prevHover.svg")center center/contain no-repeat;
+}
+.swiper-button-next:hover{
+    background: transparent url("../../../../images/nextHover.svg")center center/contain no-repeat;
 }

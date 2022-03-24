@@ -27,7 +27,7 @@ const HeaderList = (props) => {
                         <NavLink to="/reviews" className={setActive}>REVIEWS</NavLink>
                     </li>
                     <li className={liLast}>
-                        <NavLink to="/book">BOOK COURSE</NavLink>
+                        <NavLink to="/book" className='headerListBook'>BOOK COURSE</NavLink>
                     </li>
                 </ul>
             </div>

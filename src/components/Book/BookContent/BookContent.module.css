@@ -4,7 +4,8 @@
     position: relative;
 }
 .container{
-    max-width: 1281px;
+    max-width: 1480px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .title{
@@ -21,10 +22,11 @@
     align-items: flex-start;
 }
 .calendar{
-    width: 642px;
+    width: 640px;
     height: 590px;
     background: #F7F7F7;
     opacity: 0.95;
+    padding: 39px 51px 48px 50px;
 }
 .payment{
     max-width: 460px;

@@ -1,14 +1,12 @@
-.header{
-    padding: 20px 0 50px;
-    background: url("./../../images/headerBg.jpg")right bottom/cover no-repeat;
-    min-height: 100vh;
-}
+
 
 
 .container{
     max-width: 1420px;
     margin: 0 auto;
     padding: 0 10px;
+    position: relative;
+    z-index: 100;
 }
 
 .headerWrapper{
@@ -35,9 +33,6 @@
 .headerListItem+.headerListItem{
     margin-left: 80px;
 }
-.headerListItem:last-child{
-    margin-left: 135px;
-}
 
 .headerLast a{
     border: 1px solid #4C604A;
@@ -56,4 +51,32 @@
 
 .active{
     font-weight: 700;
+}
+.headerListBook{
+    width: 250px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+.headerListBook:hover{
+    background-color: #4C604A;
+    color: #fff;
+}
+.headerListBook:focus{
+    outline-offset: 3px;
+    outline: 1px solid #4C604A;
+}
+.momentLink:hover{
+    background-color: #4C604A;
+    color: #fff;
+}
+.momentLink:focus{
+    outline-offset: 3px;
+    outline: 1px solid #4C604A;
+}
+.momentLink:active{
+    transform: scaleX(.98) scaleY(.9);
+    outline: none;
 }

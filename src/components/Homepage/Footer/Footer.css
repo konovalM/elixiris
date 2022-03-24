@@ -30,12 +30,17 @@ footer{
     letter-spacing: 0.3em;
     color: #FFFFFF;
 }
-
+.footerBookWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
 .footerBook{
-    width: 337px;
-    display: block;
-    margin: 0 auto 40px;
-    padding: 14px 51px;
+    width: 330px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(256, 256, 256, .6);
     font-family: 'Open Sans';
     font-style: normal;
@@ -44,6 +49,19 @@ footer{
     line-height: 23px;
     letter-spacing: 0.3em;
     color: #FFFFFF;
+    transition: background-color .2s;
+}
+.footerBook:hover{
+    background-color: #fff;
+    color: #000;
+}
+.footerBook:focus{
+    outline-offset: 3px;
+    outline: 1px solid #fff;
+}
+.footerBook:active{
+    transform: scaleX(.98) scaleY(.9);
+    outline: none;
 }
 .footerLast{
     display: flex;
@@ -64,6 +82,7 @@ footer{
     border-left: 1px solid rgba(256, 256, 256, .6);
 }
 .containerFooter{
-    max-width: 1800px;
+    max-width: 1820px;
+    padding: 0 10px;
     margin: 0 auto;
 }

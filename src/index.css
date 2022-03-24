@@ -41,3 +41,11 @@ p{
 section{
   margin: 0;
 }
+::placeholder{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  color: #555555;
+}

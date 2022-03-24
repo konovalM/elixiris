@@ -11,7 +11,12 @@ h1{
     max-width: 780px;
     margin-bottom: 51px;
 }
-
+.header{
+    padding: 20px 0 50px;
+    background-color: #E5ECE4;
+    min-height: 100vh;
+    position: relative;
+}
 h1 span{
     color: #688C63;;
 }
@@ -55,6 +60,11 @@ h1 span{
 .headerContent a:active{
     transform: scaleX(.98) scaleY(.9);
     outline: none;
+}
+.headerAbsolute{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
