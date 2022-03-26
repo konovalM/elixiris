@@ -18,6 +18,7 @@
     cursor: pointer;
 }
 .question{
+    font-family: "Futura";
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -42,4 +43,27 @@
     max-height: none;
     margin-top: 30px;
     opacity: 0.6;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 768px){
+    .question{
+        font-size: 24px;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 426px){
+    .question{
+        font-size: 20px;
+    }
+    .wrapper{
+        padding: 70px 10px;
+    }
+    .img{
+        width: 25px;
+    }
 }

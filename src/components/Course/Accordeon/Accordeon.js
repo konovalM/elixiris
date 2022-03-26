@@ -22,7 +22,7 @@ const Accordeon = () => {
                     <div className={s.item}>
                         <div className={s.title} onClick={() => {toggle(i)}}>
                             <h4 className={s.question}>{item.question}</h4>
-                            <span>{state[i] ? (<img src={minus} alt="minus"/>) : (<img src={plus} alt="plus"/>)}</span>
+                            <span>{state[i] ? (<img src={minus} alt="minus" className={s.img}/>) : (<img className={s.img} src={plus} alt="plus"/>)}</span>
                         </div>
                         <div className={state[i] ? s.content + ' ' + s.show : s.content}>{item.answer}</div>
                     </div>

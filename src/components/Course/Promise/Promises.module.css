@@ -4,7 +4,8 @@
 
 }
 .container{
-    max-width: 1242px;
+    max-width: 1282px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .wrapper{
@@ -31,7 +32,7 @@
 }
 .main{
     margin-bottom: 20px;
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -99,4 +100,92 @@
 .w315{
     max-width: 315px;
 }
+
+/* ADAPTIVE */
+
+@media (max-width: 1270px){
+    .wrapper{
+        grid-template-columns: 527px 503px;
+        grid-column-gap: 100px;
+    }
+}
+
+@media (max-width: 1169px){
+    .wrapper{
+        grid-template-columns: 400px 400px;
+
+    }
+}
+
+@media (max-width: 944px){
+    .wrapper{
+        grid-template-columns: 340px 340px;
+        grid-column-gap: 50px;
+    }
+    .element:nth-child(5){
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .title{
+        font-size: 45px;
+        text-align: center;
+    }
+    .inner{
+        padding: 70px 0 0  0;
+    }
+    .element::before{
+        font-size: 45px;
+    }
+    .wrapper{
+        grid-template-columns: 500px;
+        margin: 0 auto;
+    }
+    .gridOutside{
+        display: flex;
+        justify-content: center;
+        max-width: 720px;
+    }
+    .descr{
+        max-width: none;
+    }
+    .promise{
+        padding: 70px 0 100px;
+    }
+}
+
+@media (max-width: 590px) {
+    .wrapper{
+        grid-template-columns: 390px;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper{
+        grid-template-columns: 335px;
+    }
+    .inner{
+        padding: 50px 0 0  0;
+    }
+    .element::before{
+        font-size: 31px;
+    }
+    .main{
+        font-size: 25px;
+    }
+    .descr{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper{
+        grid-template-columns: 300px;
+    }
+}
+
+
+
+
 

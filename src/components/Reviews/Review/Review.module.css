@@ -4,15 +4,15 @@
     position: relative;
     background-color: #F6F6F6;
 }
-.flower{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: none;
+.container{
+    max-width: 1265px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 .person{
     margin-right: 125px;
@@ -31,6 +31,7 @@
     background: transparent url("../../../images/quotes.svg")center center/cover no-repeat;
 }
 .title{
+    font-family: 'Futura';
     font-weight: 500;
     font-size: 28px;
     line-height: 150%;
@@ -55,7 +56,7 @@
     align-content: center;
 }
 .name{
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -95,4 +96,32 @@
 }
 .prev{
     margin-right: 30px;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 666px) {
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .person{
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .text{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .innerWrapper{
+        flex-direction: column;
+    }
+    .about{
+        margin-bottom: 30px;
+    }
 }
