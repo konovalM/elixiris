@@ -185,13 +185,13 @@
         height: 100vh;
         background: url("../../images/adaptive/burgerBackground.jpg")center center/cover no-repeat;
         position: fixed;
-        top: -100%;
-        right: 0;
-        transition: top 1s;
+        top: 0;
+        right: -100%;
+        transition: right 1s;
 
     }
     .headerOtherActive{
-        top: 0;
+        right: 0;
     }
     .headerListItem+.headerListItem{
         margin-left: 0;

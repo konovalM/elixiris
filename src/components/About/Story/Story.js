@@ -1,5 +1,6 @@
 import s from './Story.module.css'
 import img from '../../../images/groupStory.png'
+import imgAdaptive from '../../../images/adaptive/story.png'
 
 const Story = () => {
     return (
@@ -16,7 +17,8 @@ const Story = () => {
                         </p>
                     </div>
                     <div className={s.minusMargin}>
-                        <img src={img} alt="image"/>
+                        <img src={img} alt="image" className={s.img}/>
+                        <img src={imgAdaptive} alt="image" className={s.imgAdaptive}/>
                     </div>
                 </div>
             </div>

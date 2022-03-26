@@ -26,3 +26,34 @@
     height: calc(100vh - 600px);
     background: url("../../../images/aboutBetween.jpg")center center/cover no-repeat;
 }
+
+/* ADAPTIVE */
+
+@media (max-width: 1500px){
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px){
+    .description{
+        font-size: 18px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .second{
+        background: url("../../../images/adaptive/aboutBetweenAdaptive.jpg")center center/cover no-repeat;
+    }
+    .first{
+        min-height: 400px;
+    }
+    .second{
+        height: calc(100vh - 400px);
+    }
+    .title{
+        font-size: 31px;
+        margin: 70px 0 30px;
+    }
+}
