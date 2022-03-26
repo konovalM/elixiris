@@ -4,8 +4,9 @@
 }
 
 .container{
-    max-width: 1800px;
+    max-width: 18400px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title{
@@ -28,4 +29,25 @@
 }
 .text+.text{
     margin-top: 20px;
+}
+
+
+/* ADAPTIVE */
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title{
+        font-size: 31px;
+    }
+    .text{
+        font-size: 14px;
+    }
 }

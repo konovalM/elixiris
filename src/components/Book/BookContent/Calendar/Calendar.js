@@ -53,10 +53,10 @@ const Calendar = () => {
                 </div>
                 <div className={s.buttons}>
                     <button className={s.button} onClick={handlePrevMonthButton}>
-                        <img src={leftArrow} alt="leftArrow"/>
+                        <img src={leftArrow} alt="leftArrow" className={s.img}/>
                     </button>
                     <button className={s.button} onClick={handleNextMonthButton}>
-                        <img src={rightArrow} alt="rightArrow"/>
+                        <img src={rightArrow} alt="rightArrow" className={s.img}/>
                     </button>
                 </div>
             </div>

@@ -188,7 +188,7 @@
         top: 0;
         right: -100%;
         transition: right 1s;
-
+        z-index: 5;
     }
     .headerOtherActive{
         right: 0;

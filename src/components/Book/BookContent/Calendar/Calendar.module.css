@@ -8,7 +8,7 @@
     position: relative;
 }
 .chosenDate{
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -92,4 +92,70 @@
 }
 .selected:hover{
     background-color: #69A561;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 768px){
+    .chosenDate{
+        font-size: 24px;
+    }
+    .th{
+        font-size: 18px;
+    }
+    .td{
+        font-size: 18px;
+        height: 50px;
+    }
+    .spanAnother{
+        font-size: 18px;
+    }
+    .span{
+        width: 40px;
+        height: 40px;
+    }
+    .header{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .chosenDate{
+        font-size: 20px;
+    }
+    .button{
+        width: 33px;
+        height: 28px;
+    }
+    .buttons::before{
+        height: 29px;
+    }
+    .img{
+        width: 14px;
+    }
+    .td{
+        height: 36px;
+    }
+    .header{
+        margin-bottom: 16px;
+    }
+    .span{
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 355px){
+
+
+    .td{
+        height: 36px;
+    }
+    .header{
+        margin-bottom: 16px;
+    }
+    .span{
+        width: 36px;
+        height: 36px;
+    }
 }

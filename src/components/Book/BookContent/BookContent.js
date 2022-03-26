@@ -8,6 +8,9 @@ const BookContent = () => {
         <section className={s.content}>
             <div className={s.container}>
                 <h2 className={s.title}>Book the Course</h2>
+                <p className={s.descr}>
+                    To discover all the benefits of the Elixiris process for yourself, simply pay the course cost, select a recurring course time on the calendar according to your availability, in your time zone, ensure you have the free Zoom app, and leave the rest to us!
+                </p>
                 <div className={s.wrapper}>
                     <div className={s.calendar}>
                         <Calendar/>

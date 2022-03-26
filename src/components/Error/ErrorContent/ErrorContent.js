@@ -4,9 +4,10 @@ import HeaderList from "../../HeaderList/HeaderList";
 
 const ErrorContent = () => {
     return (
+
         <section className={s.error}>
             <div className={s.container}>
-                <HeaderList white={true}/>
+                <HeaderList white={window.innerWidth > 768 ? true : false}/>
                 <h2 className={s.title}>404</h2>
                 <h3 className={s.titleName}>Page Not Found</h3>
                 <p className={s.description}>The page doesn’t exist or was removed.

@@ -4,8 +4,8 @@
     position: relative;
 }
 .container{
-    max-width: 1420px;
-    padding: 0 10px;
+    max-width: 1440px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .wrapper{
@@ -137,4 +137,80 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
+}
+
+.firstMobile, .secondMobile{
+    display: none;
+}
+/* ADAPTIVE */
+
+@media (max-width: 1694px) {
+    .absoluteImage{
+        width: 800px;
+    }
+}
+
+@media (max-width: 1423px) {
+    .absoluteImage{
+        width: 700px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .absolute{
+        display: none;
+    }
+    .wrapper{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px){
+    .title{
+        font-size: 40px;
+    }
+    .description{
+        font-size: 20px;
+    }
+}
+@media (max-width: 631px) {
+    .wrapper{
+        margin: 0 auto;
+    }
+    .content{
+        padding: 70px 0;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .first{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .second{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title{
+        font-size: 31px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .infoFirst{
+        margin-bottom: 30px;
+    }
+    .firstDesktop, .secondDesktop{
+        display: none;
+    }
+    .firstMobile, .secondMobile{
+        display: block;
+    }
+    .tel, .address{
+        font-size: 18px;
+    }
 }
