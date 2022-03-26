@@ -28,7 +28,7 @@ const Calendar = () => {
         console.log(date)
         changingDateMethod(date)
     }
-
+    console.log(currentDate)
     const areEqual = (a, b) => {
         if (!a || !b) return false
 

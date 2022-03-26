@@ -11,8 +11,15 @@
     padding: 40px 25px 0;
     text-align: center;
 }
+.slideImg{
+
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
 .title{
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -28,3 +35,36 @@
     line-height: 150%;
     color: #555555;
 }
+
+/* ADAPTIVE */
+
+@media (max-width: 1170px){
+    .slide{
+        width: 320px;
+    }
+    .descr{
+        font-size: 19px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .slide{
+        width: 340px;
+    }
+}
+
+@media (max-width: 425px) {
+    .slide{
+        width: 318px;
+    }
+}
+@media (max-width: 360px) {
+    .slide{
+        width: 300px;
+    }
+}
+

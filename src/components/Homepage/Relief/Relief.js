@@ -11,8 +11,10 @@ const Relief = () => {
                     <p className={s.descr}>Our process reflects these elements, and purposes the science upon which nature operates.</p>
                 </div>
             </div>
-            <div className={s.absoluteSlider}>
-                <Slider/>
+            <div className={s.absoluteSliderWrapper}>
+                <div className={s.absoluteSlider}>
+                    <Slider/>
+                </div>
             </div>
         </section>
     )

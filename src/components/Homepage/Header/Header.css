@@ -66,7 +66,131 @@ h1 span{
     right: 0;
     bottom: 0;
 }
+.headerContentMobile{
+    display: none;
+}
+ /*ADAPTIVE*/
 
+@media (max-width: 1700px) {
+    .headerAbsolute{
+        height: 90%;
+    }
+}
+@media (max-width: 1500px) {
+    .headerAbsolute{
+        height: 90%;
+    }
+    .headerContent{
+        margin-top: 100px;
+    }
+    .headerTitle{
+        font-size: 50px;
+    }
+    .headerContent{
+        max-width: 600px;
+    }
+}
+@media (max-width: 1200px){
+    .headerTitle{
+        font-size: 35px;
+    }
+    .headerContent{
+        max-width: 470px;
+    }
+    .headerAbsolute{
+        height: 80%;
+    }
+}
+
+@media (max-width: 992px){
+    .headerContent a{
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .headerTitle{
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+    .headerContent{
+        max-width: 390px;
+    }
+    .headerDescr{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .headerContentMobile{
+        display: block;
+        background-color: #F0F5EF;
+        padding: 50px 0;
+    }
+    .header{
+        min-height: calc(100vh - 387px);
+    }
+    .headerTitle{
+        font-family: 'Futura';
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .header100vh{
+        min-height: 100vh;
+        background-color: #F0F5EF;
+    }
+    .headerContent{
+        display: none;
+    }
+    .headerDescr{
+        margin: 0 auto 35px;
+    }
+    .headerMobileContainer{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .headerMaxWidthMobile{
+        text-align: center;
+    }
+    .headerDiscover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 250px;
+        height: 50px;
+        border: none;
+        font-family: 'Futura';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        background: #69A561;
+        color: #fff;
+        letter-spacing: 0.3em;
+        transition: background-color .2s;
+        outline: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .headerDiscover{
+        font-size: 12px;
+        width: 186px;
+    }
+    .headerDescr{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .headerTitle{
+        margin-bottom: 20px;
+    }
+    .header{
+        min-height: calc(100vh - 369px);
+    }
+}
 
 
 

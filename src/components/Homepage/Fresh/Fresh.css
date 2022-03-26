@@ -3,7 +3,10 @@
     padding: 230px 0;
     position: relative;
 }
-
+.containerFresh{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .freshRight{
     display: flex;
     position: absolute;
@@ -40,9 +43,9 @@
     margin-bottom: 25px;
 }
 .linkWrapper{
-    margin-top: 100px;
-    text-align: center;
-
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 .freshLink{
     display: flex;
@@ -50,7 +53,6 @@
     align-items: center;
     width: 330px;
     height: 55px;
-    margin-top: 100px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -72,4 +74,102 @@
 .freshLink:active{
     transform: scaleX(.98) scaleY(.9);
     outline: none;
+}
+.girlImgAdaptive{
+    display: none;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1700px){
+    .freshWrapper{
+        padding: 255px 30px 0;
+        max-width: 470px;
+    }
+}
+@media (max-width: 1500px){
+    .containerFresh{
+        max-width: 1320px;
+    }
+}
+@media (max-width: 1350px){
+    .freshRight{
+        position: static;
+    }
+    .freshTitle{
+        text-align: center;
+        max-width: none;
+        margin-bottom: 50px;
+    }
+    .freshRight{
+        transform: none;
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        right: auto;
+        top: auto;
+    }
+    .freshWrapper{
+        display: block;
+        min-width: 100%;
+        padding: 255px 30px 100px;
+    }
+    .freshSheet{
+        display: none;
+    }
+    .girlImg{
+        display: none;
+    }
+    .girl{
+        align-self: auto;
+    }
+    .freshInner{
+        max-width: 402px;
+        margin: 0 auto;
+    }
+    .girlImgAdaptive{
+        display: block;
+        margin-bottom: -200px;
+        z-index: 10;
+        position: relative;
+    }
+    .fresh{
+        padding: 60px 0 0;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1170px){
+    .freshTitle{
+        font-size: 36px;
+    }
+    .freshWrapper p{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 425px){
+    .freshWrapper p{
+        font-size: 18px;
+    }
+    .freshTitle{
+        font-size: 32px;
+    }
+    .freshLink{
+        width: 335px;
+        height: 50px;
+    }
+}
+@media (max-width: 396px){
+
+    .freshLink{
+        width: 300px;
+        height: 50px;
+    }
+    .freshWrapper{
+        padding: 250px 10px 70px;
+    }
+    .girlImgAdaptive{
+        width: 300px;
+    }
 }

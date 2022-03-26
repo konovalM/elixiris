@@ -4,7 +4,7 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import s from './Slider.module.css'
 import './Slide.css'
-
+import React, {useState, useEffect} from "react";
 
 
 import one from '../../../../images/slider/gentle.jpg'
@@ -17,12 +17,47 @@ import six from '../../../../images/slider/calm.jpg'
 
 
 const Slider = () => {
+
+    function useWindowSize() {
+        const [size, setSize] = useState([window.innerHeight, window.innerWidth])
+        useEffect(() => {
+            const handleResize = () => {
+                setSize([window.innerHeight, window.innerWidth])
+            }
+            window.addEventListener('resize', handleResize)
+        }, [])
+        return size
+    }
+
+    const checkSlidesPerView = () => {
+        if (width > 1700){
+            return 3
+        } else if (width > 993){
+            return 2
+        } else if (width > 768){
+            return 1
+        }
+        return 'auto'
+    }
+    const spaceBetweenCheck = () => {
+        if (width > 768){
+            return 50
+        } else if ( width > 424){
+            return -25
+        }
+        return -60
+    }
+
+    const [height, width] = useWindowSize();
+
     return (
         <div>
-            <Swiper navigation={true}
+            <Swiper
+
+                    navigation={true}
                     modules={[Navigation]}
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    spaceBetween={spaceBetweenCheck()}
+                    slidesPerView={checkSlidesPerView()}
                     style={{
                         "--swiper-navigation-color": "#fff",
                     }}

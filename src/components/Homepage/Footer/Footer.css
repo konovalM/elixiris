@@ -86,3 +86,88 @@ footer{
     padding: 0 10px;
     margin: 0 auto;
 }
+.adaptivePaypal{
+    display: none;
+}
+.adaptivePaypalElix{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    position: relative;
+}
+.adaptivePaypalElix::after{
+    content: 'TM';
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4px;
+    line-height: 150%;
+    position: absolute;
+    right: -6px;
+    top: 2px;
+}
+.footerLastAdaptive{
+    display: none;
+}
+/* ADAPTIVE */
+
+@media (max-width: 768px){
+    .footerWrapper{
+        flex-direction: column;
+        position: relative;
+        border: none;
+        margin-bottom: 60px;
+    }
+    .footerLinks{
+        flex-direction: column;
+        width: auto;
+    }
+    .footerLogo{
+        margin: 0 0 60px;
+    }
+    .footerLink+.footerLink{
+        margin-top: 40px;
+    }
+    .footerLink:last-child{
+        margin-bottom: 60px;
+    }
+    .footerWrapper::before{
+        content: '';
+        height: 1px;
+        width: calc(100% + 20px);
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+    }
+    .footerWrapper::before{
+        bottom: 0;
+        left: -10px;
+    }
+    .footerPaypal{
+        display: none;
+    }
+    .footerBookWrapper{
+        margin-bottom: 48px;
+    }
+    .adaptivePaypal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 31px;
+    }
+    .footerLast{
+        display: none;
+    }
+    .footerLastAdaptive{
+        display: block;
+        margin: 0 auto;
+    }
+    .footerFirstAdaptive, .footerSecondAdaptive, .footerThirdAdaptive{
+        text-align: center;
+    }
+}
