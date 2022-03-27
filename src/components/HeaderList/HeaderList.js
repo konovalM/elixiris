@@ -3,6 +3,7 @@ import logo from "../../images/logo.svg";
 import logoError from "../../images/logoError.svg"
 import {Link, NavLink} from "react-router-dom";
 import { useState} from "react";
+import ScrollLock from "react-scrolllock";
 
 const HeaderList = (props) => {
     let liClass = "headerListItem",
@@ -11,22 +12,24 @@ const HeaderList = (props) => {
         liClass = 'headerListItem white';
         liLast = 'headerListItem headerLastWhite white'
     }
+
     const [menuClass, menuClassMethod] = useState('headerOther')
     const [burgerClass, burgerClassMethod] = useState('burger-menu')
+    const [scroll, scrollMethod] = useState(false)
 
     const toggleClass = () => {
         if (menuClass == 'headerOther'){
             menuClassMethod('headerOther headerOtherActive')
             burgerClassMethod('burger-menu burger-menu-active')
-            document.querySelector('body').style.overflow = 'hidden'
+            scrollMethod(true)
         } else {
             menuClassMethod('headerOther')
             burgerClassMethod('burger-menu')
-            document.querySelector('body').style.overflow = 'visible'
+            scrollMethod(false)
         }
     }
     const toggleVisible = () => {
-        document.querySelector('body').style.overflow = 'visible'
+        scrollMethod(false)
     }
     const toggleAll = () => {
         if (burgerClass == 'burger-menu burger-menu-active'){
@@ -37,7 +40,7 @@ const HeaderList = (props) => {
     const setActive = ({isActive}) => isActive ? 'active' : '';
     return(
         <div className='beforeHeaderWrapper'>
-
+            <ScrollLock isActive={scroll}/>
             <div className="headerWrapper">
                <div className="mobileLinkFlex">
                    <Link to='/'><img src={(props.white ? logoError : logo)} alt="logo" className="headerListLogo" onClick={toggleAll}/></Link>

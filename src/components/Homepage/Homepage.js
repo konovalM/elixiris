@@ -4,6 +4,7 @@ import Fresh from "./Fresh/Fresh";
 import Moment from "./Moment/Moment";
 import Footer from "./Footer/Footer";
 import Relief from "./Relief/Relief";
+import ScrollLock from "react-scrolllock";
 
 const Homepage = () => {
     return (<div>

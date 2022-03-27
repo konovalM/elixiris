@@ -5,8 +5,9 @@ import Reviews from "./Reviews/Reviews";
 import Terms from "./Terms/Terms";
 import Error from "./Error/Error";
 import ContactUs from "./ContactUs/ContactUs";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import Book from "./Book/Book";
+import {useLayoutEffect} from "react";
 
 const App = () => {
     const about = {
@@ -21,18 +22,29 @@ const App = () => {
         title: 'Take a Moment to Breathe',
         text: 'We want you to rest assured that the Elixiris process works. We hope you can relate to one or more of the asthma histories in these reviews and be inspired and hopeful about what the Elixiris process can do for you. '
     }
+
+    const Wrapper = ({children}) => {
+        const location = useLocation();
+        useLayoutEffect(() => {
+            document.documentElement.scrollTo(0, 0);
+        }, [location.pathname]);
+        return children
+    }
+
     return (
             <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={<Homepage/>}/>
-                    <Route path='/about' element={<About title={about.title} text={about.text}/>}/>
-                    <Route path='/course' element={<Course title={course.title} text={course.text}/>}/>
-                    <Route path='/reviews' element={<Reviews title={reviews.title} text={reviews.text}/>}/>
-                    <Route path='/terms' element={<Terms/>}/>
-                    <Route path='/contact' element={<ContactUs/>}/>
-                    <Route path='/book' element={<Book/>}/>
-                    <Route path='*' element={<Error/>}/>
-                </Routes>
+                <Wrapper>
+                    <Routes>
+                        <Route path='/' element={<Homepage/>}/>
+                        <Route path='/about' element={<About title={about.title} text={about.text}/>}/>
+                        <Route path='/course' element={<Course title={course.title} text={course.text}/>}/>
+                        <Route path='/reviews' element={<Reviews title={reviews.title} text={reviews.text}/>}/>
+                        <Route path='/terms' element={<Terms/>}/>
+                        <Route path='/contact' element={<ContactUs/>}/>
+                        <Route path='/book' element={<Book/>}/>
+                        <Route path='*' element={<Error/>}/>
+                    </Routes>
+                </Wrapper>
             </BrowserRouter>
     )
 }
